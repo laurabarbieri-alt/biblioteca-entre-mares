@@ -21,11 +21,45 @@
         <section>
             <h2>Empréstimo</h2>
             <p>
-                Escolha seu livro, faça o cadastro do empréstimo e aproveite a leitura com tranquilidade. <strong>Após o prazo combinado</strong>, basta devolver o livro para que outra pessoa também possa viver essa história.
+                Escolha seu livro, faça o cadastro do empréstimo e aproveite a leitura com tranquilidade.
+                <br>
+                 <strong>Após o prazo combinado</strong>, basta devolver o livro para que outra pessoa também possa viver essa história.
             </p>
         </section>
         <H2>Pegue seu livro</H2>
         <form action="#" method="post">
+             <label for="nome">Nome Completo:</label>
+            <input 
+                type="text" name="nome" id="nome"> 
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="telefone">Telefone:</label>
+            <input 
+                  type="tel" name="telefone" id="telefone">
+            <br>
+            <label for="data-emp">Data do empréstimo:</label>
+            <input type="date" name="data-emp" id="data-emp">
+            <br>
+            <label for="data-dev">Data para devolução:</label>
+            <input type="date" name="data-dev" id="data-dev">
+            <br>
+            <label for="categoria">Categorias</label>
+            <select name="categoria" id="categoria">
+                <option value="">Selecione uma opção</option>
+                <option value="infantil">Infantil</option>
+                <option value="romance">Romance</option>
+                <option value="classico">Clássico</option>
+                <option value="fantasia">Fantasia</option>
+                <option value="drama">Drama</option>
+                <option value="biografia">Biografia</option>
+                <option value="aventura">Aventura</option>
+                <option value="lit-brasileira">Literatura Brasileira</option>
+            </select>
+            <br>
+            <button type="submit">Confirmar agendamento</button>
+        </form>
     </main>
     
      <footer>
