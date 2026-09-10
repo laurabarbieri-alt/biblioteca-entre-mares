@@ -30,23 +30,31 @@
         <form action="#" method="post">
              <label for="nome">Nome Completo:</label>
             <input 
-                type="text" name="nome" id="nome"> 
+                type="text" name="nome" id="nome" required> 
             <br>
             <label for="email">Email:</label>
             <input type="email" name="email" id="email">
             <br>
             <label for="telefone">Telefone:</label>
             <input 
-                  type="tel" name="telefone" id="telefone">
+                  type="tel" 
+                  name="telefone" 
+                  id="telefone"
+                   required
+                 inputmode="numeric"
+                 maxlength="15"
+                 pattern="(?:\(?[1-9]{2}\)?\s?)?(?:9\d{4}|\d{4})-?\d{4}"
+                 title="Digite com DDD. Ex: (17) 98765-4321 ou 17987654321"
+            >
             <br>
             <label for="data-emp">Data do empréstimo:</label>
-            <input type="date" name="data-emp" id="data-emp">
+            <input type="date" name="data-emp" id="data-emp" required>
             <br>
             <label for="data-dev">Data para devolução:</label>
-            <input type="date" name="data-dev" id="data-dev">
+            <input type="date" name="data-dev" id="data-dev" required>
             <br>
             <label for="categoria">Categorias</label>
-            <select name="categoria" id="categoria">
+            <select name="categoria" id="categoria" required>
                 <option value="">Selecione uma opção</option>
                 <option value="infantil">Infantil</option>
                 <option value="romance">Romance</option>
